@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_menu"
+    android:layout_width="220dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:backgroundTint="#F0635D5E"
+        android:text="메뉴 닫기" />
+
+    <Button
+        android:id="@+id/btn_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:backgroundTint="#F00543B3"
+        android:text="기록" />
+
+    <Button
+        android:id="@+id/btn_statistics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:backgroundTint="#F00543B3"
+        android:text="통계보기" />
+
+    <Button
+        android:id="@+id/btn_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:backgroundTint="#F00543B3"
+        android:text="캘린더" />
+
+    <Button
+        android:id="@+id/btn_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:backgroundTint="#F00543B3"
+        android:text="운동정보" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_ask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="#F0635D5E"
+            android:text="개발자 문의" />
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#F0B3051F"
+            android:text="로그아웃" />
+    </LinearLayout>
+
+</LinearLayout>

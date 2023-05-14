@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="7dp"
+    android:background="#C6C5C5"
+    android:orientation="horizontal"
+    android:weightSum="10">
+
+    <TextView
+        android:id="@+id/tv_sectionNum"
+        android:layout_width="70dp"
+        android:layout_height="62dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_weight="1"
+        android:background="#E3E1E1"
+        android:gravity="center"
+        android:text="구간" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="1dp"
+        android:layout_weight="9">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="#E3E1E1"
+                android:gravity="right|center_vertical"
+                android:text="거리  :  "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_sectionTime"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="9"
+                android:background="#E3E1E1"
+                android:gravity="center_vertical"
+                android:text="00 : 00" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="#E3E1E1"
+                android:gravity="right|center_vertical"
+                android:text="시간  :  "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_sectionDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="9"
+                android:background="#E3E1E1"
+                android:gravity="center_vertical"
+                android:text="0.0km" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="#E3E1E1"
+                android:gravity="right|center_vertical"
+                android:text="평균 페이스  :  "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_sectionPace"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="9"
+                android:background="#E3E1E1"
+                android:gravity="center_vertical"
+                android:text="(분/km)" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
+</LinearLayout>

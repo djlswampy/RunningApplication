@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Information">
+
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#F00543B3"
+        android:gravity="center"
+        android:text="운동정보"
+        android:textColor="#F6F6F6"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="176dp"
+        app:srcCompat="@drawable/_5956_2" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:backgroundTint="#498DF3"
+        android:text="워밍업" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:backgroundTint="#498DF3"
+        android:text="비기너 루틴" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:backgroundTint="#498DF3"
+        android:text="10km 달리기" />
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:backgroundTint="#498DF3"
+        android:text="하프 마라톤" />
+
+    <Button
+        android:id="@+id/button19"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:backgroundTint="#498DF3"
+        android:text="이벤트" />
+
+    <Button
+        android:id="@+id/btn_eventSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:backgroundTint="#498DF3"
+        android:text="대회 정보" />
+
+</LinearLayout>

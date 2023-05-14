@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calendar">
+
+    <Button
+        android:id="@+id/btn_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#F00543B3"
+        android:text="수정"
+        app:layout_constraintEnd_toEndOf="@+id/scrollView"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toStartOf="@+id/scrollView"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#F00543B3"
+        android:gravity="center"
+        android:text="캘린더"
+        android:textColor="#F8F8F8"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CalendarView
+        android:id="@+id/calendar"
+        android:layout_width="349dp"
+        android:layout_height="311dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="31dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="351dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="125dp"
+        android:background="#E4E1E1"
+        android:scrollbarStyle="insideInset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/iv_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#F0C61A1A"
+        android:text="삭제"
+        app:layout_constraintEnd_toEndOf="@+id/scrollView"
+        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintStart_toStartOf="@+id/scrollView"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView" />
+
+    <Button
+        android:id="@+id/btn_write"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#F00543B3"
+        android:text="작성"
+        app:layout_constraintEnd_toEndOf="@+id/scrollView"
+        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintStart_toStartOf="@+id/scrollView"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

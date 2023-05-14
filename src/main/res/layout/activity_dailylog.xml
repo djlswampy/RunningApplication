@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    tools:context=".DailyLog">
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#F00543B3"
+        android:gravity="center"
+        android:text="메모장"
+        android:textColor="#F8F8F8"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="350dp"
+        android:layout_height="324dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="#E8E8E8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="내용을 입력하세요"
+            android:inputType="textMultiLine" />
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/tv_imageUri"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:background="#E8E8E8"
+        android:hint="첨부파일"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/scrollView3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/scrollView3"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="30dp"
+        android:text="작성완료"
+        app:layout_constraintEnd_toEndOf="@+id/tv_imageUri"
+        app:layout_constraintStart_toEndOf="@+id/btn_addImage"
+        app:layout_constraintTop_toBottomOf="@+id/tv_imageUri" />
+
+    <Button
+        android:id="@+id/btn_addImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="사진 첨부"
+        app:layout_constraintEnd_toStartOf="@+id/btn_complete"
+        app:layout_constraintStart_toStartOf="@+id/tv_imageUri"
+        app:layout_constraintTop_toBottomOf="@+id/tv_imageUri" />
+
+    <ImageButton
+        android:id="@+id/ibtn_delete"
+        android:layout_width="22dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/tv_imageUri"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_imageUri"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3"
+        app:srcCompat="@drawable/round_clear_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
